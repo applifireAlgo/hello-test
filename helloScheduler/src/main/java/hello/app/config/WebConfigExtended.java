@@ -1,0 +1,20 @@
+package hello.app.config;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+import com.athena.config.server.WebConfig;
+
+/**
+ *
+ *
+ * @author Anant
+ *
+ */
+@Configuration
+@EnableTransactionManagement
+@EnableAsync
+
+public class WebConfigExtended extends WebConfig {
+}
